@@ -21,4 +21,4 @@ Please look the demo csv file I have incuded, THE COLUM NAMES MUST BE THE SAME
 Install the source version, open it in visual studio and debug the first import, you can easly modify the source import based on your CSV file
 
 For any question contact me on GitHub
-Fabio
+Fabio 

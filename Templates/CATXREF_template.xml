@@ -1,0 +1,16 @@
+<item>
+  <itemid>{{itemCATXREF.id}}</itemid>
+  <portalid>0</portalid>
+  <moduleid>-1</moduleid>
+  <xrefitemid>{{itemCurrentCategoryID.id}}</xrefitemid>
+  <parentitemid>{{itemCurrentProductID.id}}</parentitemid>
+  <typecode>CATXREF</typecode>
+  <guidkey>{{itemCurrentCategoryID.id}}x{{itemCurrentProductID.id}}</guidkey>
+  <lang>
+  </lang>
+  <userid>0</userid>
+  <genxml>
+    <sort>{{itemCATXREF.id}}</sort>
+  </genxml>
+  <data><![CDATA[]]></data>
+</item>

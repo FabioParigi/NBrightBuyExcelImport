@@ -1,0 +1,35 @@
+<genxml>
+  <files />
+  <hidden>
+    <modelid>{{modelPRD.txtmodulid}}</modelid>
+  </hidden>
+  <textbox>
+    <availabledate datatype="date" />
+    <txtqtyminstock>0</txtqtyminstock>
+    <txtmodelref>{{modelPRD.txtmodulref}}</txtmodelref>
+    <txtunitcost>0.0000</txtunitcost>
+    <txtsaleprice>0.00</txtsaleprice>
+    <txtbarcode />
+    <txtqtyremaining>-1</txtqtyremaining>
+    <txtqtystockset>0</txtqtystockset>
+    <txtdealercost>0.0000</txtdealercost>
+    <txtpurchasecost>0.0000</txtpurchasecost>
+    <weight>0.00</weight>
+    <depth>0.00</depth>
+    <width>0.00</width>
+    <height>0.00</height>
+    <unit />
+    <delay />
+  </textbox>
+  <checkbox>
+    <chkstockon>False</chkstockon>
+    <chkishidden>False</chkishidden>
+    <chkdeleted>False</chkdeleted>
+    <chkdealeronly>False</chkdealeronly>
+  </checkbox>
+  <dropdownlist>
+    <modelstatus>010</modelstatus>
+  </dropdownlist>
+  <checkboxlist />
+  <radiobuttonlist />
+</genxml>

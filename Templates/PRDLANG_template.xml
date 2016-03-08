@@ -1,0 +1,36 @@
+<item>
+  <itemid>{{itemPRDLANG.itemid}}</itemid>
+  <portalid>0</portalid>
+  <moduleid>-1</moduleid>
+  <xrefitemid>0</xrefitemid>
+  <parentitemid>{{itemPRDLANG.parentitemid}}</parentitemid>
+  <typecode>PRDLANG</typecode>
+  <guidkey>
+  </guidkey>
+  <lang>{{itemPRDLANG.lang}}</lang>
+  <userid>0</userid>
+  <genxml>
+    <files />
+    <hidden />
+    <textbox>
+      <txtproductname>{{itemPRDLANG.name}}</txtproductname>
+      <txtsummary>{{itemPRDLANG.summary}}</txtsummary>
+      <txtseoname />
+      <txtseopagetitle />
+      <txttagwords />
+    </textbox>
+    <checkbox />
+    <dropdownlist />
+    <checkboxlist />
+    <radiobuttonlist />
+    <edt>
+      <description>
+        DESCRIZIONE
+      </description>
+    </edt>
+    <models></models>
+    <docs/>
+
+  </genxml>
+  <data><![CDATA[]]></data>
+</item>

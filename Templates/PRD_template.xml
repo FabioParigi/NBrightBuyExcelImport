@@ -1,0 +1,37 @@
+
+  <item>
+    <itemid>{{itemPRD.id}}</itemid>
+    <portalid>0</portalid>
+    <moduleid>-1</moduleid>
+    <xrefitemid>0</xrefitemid>
+    <parentitemid>0</parentitemid>
+    <typecode>PRD</typecode>
+    <guidkey>{{itemPRD.id}}</guidkey>
+    <lang></lang>
+    <userid>0</userid>
+    <genxml>
+      <files />
+      <hidden />
+      <textbox>
+        <txtproductref>{{itemPRD.txtproductref}}</txtproductref>
+        <customorder>10</customorder>
+      </textbox>
+      <checkbox />
+      <dropdownlist />
+      <checkboxlist />
+      <radiobuttonlist />
+      <importref>5</importref>
+      <models></models>
+      <imgs>
+        <genxml>
+          <hidden>
+            <imagepath>D:\archivi_web\www.alutecsrl.it\www\Portals\0\NBStore\images\{{itemPRD.image1name}}.jpg</imagepath>
+            <imageurl>/Portals/0/NBStore/images/{{itemPRD.image1name}}.jpg</imageurl>
+          </hidden>
+        </genxml>
+      </imgs>
+      <docs/>
+
+    </genxml>
+    <data><![CDATA[]]></data>
+  </item>

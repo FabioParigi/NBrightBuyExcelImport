@@ -1,0 +1,12 @@
+<genxml>
+  <files />
+  <hidden />
+  <textbox>
+    <txtmodelname>{{modelPRDLANG.txtmodelname}}</txtmodelname>
+    <txtextra>{{modelPRDLANG.txtextra}}</txtextra>
+  </textbox>
+  <checkbox />
+  <dropdownlist />
+  <checkboxlist />
+  <radiobuttonlist />
+</genxml>

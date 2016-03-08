@@ -1,0 +1,32 @@
+<item>
+  <itemid>{{itemCATEGORY.itemid}}</itemid>
+  <portalid>0</portalid>
+  <moduleid>-1</moduleid>
+  <xrefitemid>0</xrefitemid>
+  <parentitemid>{{itemCATEGORY.parentitemid}}</parentitemid>
+  <typecode>CATEGORY</typecode>
+  <guidkey>{{itemCATEGORY.itemid}}</guidkey>
+  <lang>
+  </lang>
+  <userid>0</userid>
+  <genxml>
+    <files />
+    <hidden>
+      <recordsortorder>1</recordsortorder>
+    </hidden>
+    <textbox>
+      <txtcategoryref>{{itemCATEGORY.itemid}}</txtcategoryref>
+    </textbox>
+    <checkbox>
+      <chkishidden>False</chkishidden>
+      <chkdisable>False</chkdisable>
+    </checkbox>
+    <dropdownlist>
+      <ddlgrouptype>cat</ddlgrouptype>
+      <ddlparentcatid>{{itemCATEGORY.parentitemid}}</ddlparentcatid>
+    </dropdownlist>
+    <checkboxlist />
+    <radiobuttonlist />
+  </genxml>
+  <data><![CDATA[]]></data>
+</item>

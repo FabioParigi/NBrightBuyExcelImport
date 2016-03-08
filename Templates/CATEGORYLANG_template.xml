@@ -1,0 +1,24 @@
+<item>
+  <itemid>{{itemCATEGORYLANG.itemid}}</itemid>
+  <portalid>0</portalid>
+  <moduleid>-1</moduleid>
+  <xrefitemid>0</xrefitemid>
+  <parentitemid>{{itemCATEGORYLANG.parentitemid}}</parentitemid>
+  <typecode>CATEGORYLANG</typecode>
+  <guidkey>
+  </guidkey>
+  <lang>{{itemCATEGORYLANG.lang}}</lang>
+  <userid>0</userid>
+  <genxml>
+    <files />
+    <hidden />
+    <textbox>
+      <txtcategoryname>{{itemCATEGORYLANG.txtcategoryname}}</txtcategoryname>
+    </textbox>
+    <checkbox />
+    <dropdownlist />
+    <checkboxlist />
+    <radiobuttonlist />
+  </genxml>
+  <data><![CDATA[]]></data>
+</item>

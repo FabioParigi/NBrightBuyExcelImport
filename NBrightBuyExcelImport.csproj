@@ -102,6 +102,7 @@
     <None Include="NBrightBuyExcelImport.dnn" />
     <None Include="NBrightBuyExcelImport_Resource.zip.manifest" />
     <None Include="packages.config" />
+    <None Include="_DEMO_IMPORT.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

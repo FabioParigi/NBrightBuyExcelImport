@@ -11,7 +11,7 @@ On DNN Host Extention install the zip file NBrightBuyExcelImport_1.0.0_Install.z
 You ll find the installed plugin on NB-Store admin area on Utilities Menu
 Unzip the NBrightBuyExcelImport or copy all the source code under \DesktopModules\NBright\NBrightBuyExcelImport
 
-<img src='http://s27.postimg.org/5jlx2b7lr/Cattura.jpg' border='0' alt="" />
+<img src='http://s27.postimg.org/8dp2fr9s2/Cattura.jpg' border='0' alt="" />
 
 <h1>NOTE</h1>
 The import  plugin is under develop, I have tested it on 3/4 catalogues.

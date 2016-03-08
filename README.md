@@ -12,6 +12,9 @@ You ll find the installed plugin on NB-Store admin area on Utilities Menu
 Unzip the NBrightBuyExcelImport or copy all the source code under \DesktopModules\NBright\NBrightBuyExcelImport
 
 <img src='http://i.imgur.com/YjvRxH3.png' border='0' alt="" />
+<HR/>
+<img src='http://i.imgur.com/kEYbGbl.png' border='0' alt="" />
+
 
 <h1>NOTE</h1>
 The import  plugin is under develop, I have tested it on 3/4 catalogues.

@@ -4,6 +4,7 @@ NBrightBuyExcelImport : Import CSV file to https://nbrightbuy.codeplex.com/
 Dnn > V.6
 Framework 4
 nBSTORE V3 https://nbrightbuy.codeplex.com/
+Visual Studio 2015
 
 <h1>INSTALLATION</h1>
 On the /Installation Directory you find NBrightBuyExcelImport_1.0.0_Install.zip
@@ -25,8 +26,8 @@ Please look the demo csv file I have incuded, THE COLUM NAMES MUST BE THE SAME
 
 
 Install the source version, open it in visual studio and debug the first import, you can easly modify the source import based on your CSV file
-
-<p style="color:red;">Very important!!! Test the import in a empty Nbstore db, in this way you can easly clean the db and reimport all the time you need. When your products/categories are correct, export the xml and import it on the production db</p>
-
+<hr>
+<strong>Very important!!! Test the import in a empty Nbstore db, in this way you can easly clean the db and reimport all the time you need. When your products/categories are correct, export the xml and import it on the production db</strong>
+<hr>
 For any question contact me on GitHub
 Fabio

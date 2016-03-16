@@ -494,6 +494,7 @@ namespace Nevoweb.DNN.NBrightBuyExcelImport
                         currentPRDLANG = currentPRDLANG.Replace("{{itemPRDLANG.summary}}", description);
                         currentPRDLANG = currentPRDLANG.Replace("{{itemPRDLANG.txtmodelname}}", description);
                         currentPRDLANG = currentPRDLANG.Replace("{{itemPRDLANG.lang}}", lang);
+                        currentPRDLANG = currentPRDLANG.Replace("{{itemPRDLANG.description}}", description);
 
                         //CUSTOM FIELD
                         currentPRDLANG = currentPRDLANG.Replace("{{itemPRDLANG.misureunit}}", um);

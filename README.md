@@ -21,6 +21,10 @@ Unzip the NBrightBuyExcelImport or copy all the source code under \DesktopModule
 The import  plugin is under develop, I have tested it on 3/4 catalogues.
 Please look the demo csv file I have incuded, THE COLUM NAMES MUST BE THE SAME
 
+For custom field in the CSV demo you find a UM field, I use it like a text box field in PRDLANG
+<img src='http://i.imgur.com/A6yWMWJ.png' border='0' alt="" />
+
+
 <h1>SUGGESTION</h1>
 
 

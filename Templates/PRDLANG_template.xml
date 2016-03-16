@@ -15,6 +15,7 @@
     <textbox>
       <txtproductname>{{itemPRDLANG.name}}</txtproductname>
       <txtsummary>{{itemPRDLANG.summary}}</txtsummary>
+      <misureunit>{{itemPRDLANG.misureunit}}</misureunit>
       <txtseoname />
       <txtseopagetitle />
       <txttagwords />

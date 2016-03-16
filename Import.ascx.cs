@@ -223,7 +223,7 @@ namespace Nevoweb.DNN.NBrightBuyExcelImport
 
 
                 String header = lines.First();
-                var headers = header.Split(new[] { csvDelimiter }, StringSplitOptions.RemoveEmptyEntries);
+                var headers = header.Split(Char.Parse(csvDelimiter));
                 DataTable tbl = new DataTable();
                 for (int i = 0; i < headers.Length; i++)
                 {
@@ -232,7 +232,7 @@ namespace Nevoweb.DNN.NBrightBuyExcelImport
                 var data = lines.Skip(1);
                 foreach (var line in data)
                 {
-                    var fields = line.Split(new[] { csvDelimiter }, StringSplitOptions.RemoveEmptyEntries);
+                    var fields = line.Split(Char.Parse(csvDelimiter));  //line.Split(new[] { csvDelimiter }, StringSplitOptions.RemoveEmptyEntries);
                     DataRow newRow = tbl.Rows.Add();
                     newRow.ItemArray = fields;
                 }
@@ -336,18 +336,18 @@ namespace Nevoweb.DNN.NBrightBuyExcelImport
                 tbl.Columns.Add("CategoryID_" + i.ToString());
             }
             Dictionary<string, int> Catdictionary = new Dictionary<string, int>();
-            Dictionary<string, int> PRODdictionary = new Dictionary<string, int>();
+            
             var firstlang = "";
 
             foreach (DataRow row in tbl.Rows) // CICLO SU DT
             {
                 firstlang = langList[0]; // per creare le categorie prendo la prima lista
 
-                for (int i = 1; i <= categoryLevelNumber; i++) // per ogni livello
+                for (int i = 1; i <= categoryLevelNumber; i++) // for each category level
                 {
                     string namefield = "CATEGORY" + i.ToString() + "_" + firstlang;
                     currentCATEGORYname = row[namefield].ToString();
-                    if (!Catdictionary.ContainsKey(currentCATEGORYname)) // verifico se la categoria non è nel dictionary
+                    if (!Catdictionary.ContainsKey(currentCATEGORYname)) // check if the categori isn't in the Dictionary
                     {
                         id++;
                         // se la categoria è nuova la creo e creo le sueversioni in lingua
@@ -478,14 +478,13 @@ namespace Nevoweb.DNN.NBrightBuyExcelImport
                 /////////////////// PRDLANG ////////////////////////////////
                 /////////////////// PRDLANG ////////////////////////////////
 
-                foreach (var lang in langList) // aggiungo record per tutte le lingue
+                foreach (var lang in langList) // add one PRDLANG for each language
                 {
                     var description = row["DESCRIPTION_" + lang].ToString() + " " +  row["DESCRIPTION2_" + lang].ToString();
+                    var um = row["UM"].ToString();
 
-                    if (articleref != beforearticleref)  // SE L'ARTICOLO è DIVERSO DA QUELLO DELLA RIGA PRECEDENTE è UN PRODOTTO ALRIMENTI UN MODELLO
+                    if (articleref != beforearticleref)  // if article coderef different from article code line before is a new product else is a model
                     {
-
-                        // fields row from dt
 
                         currentPRDLANG = PRDLANGxmltemplate;
                         currentPRDLANG = currentPRDLANG.Replace("{{itemPRDLANG.parentitemid}}", currentPRD_id);
@@ -496,31 +495,35 @@ namespace Nevoweb.DNN.NBrightBuyExcelImport
                         currentPRDLANG = currentPRDLANG.Replace("{{itemPRDLANG.txtmodelname}}", description);
                         currentPRDLANG = currentPRDLANG.Replace("{{itemPRDLANG.lang}}", lang);
 
+                        //CUSTOM FIELD
+                        currentPRDLANG = currentPRDLANG.Replace("{{itemPRDLANG.misureunit}}", um);
 
                         currentPRDLANGMODEL = PRDLANG_MODEL_xmltemplate;
                         currentPRDLANGMODEL = currentPRDLANGMODEL.Replace("{{modelPRDLANG.txtmodelname}}", modelRef);
                         currentPRDLANGMODEL = currentPRDLANGMODEL.Replace("{{modelPRDLANG.txtextra}}", description);
-                        //SOSTITUISCO IL MODELLO
+
+                        //replace inside the model tag , before the </models>
                         currentPRDLANG = currentPRDLANG.Replace(@"</models>", currentPRDLANGMODEL + @"</models>");
                         
                     }
-                    else
+                    else //is a model
                     {
-                        // POPOLO IL TEMPLATE DEL MODELLO
+                        // populate model template
                         currentPRDLANGMODEL = PRDLANG_MODEL_xmltemplate;
                         currentPRDLANGMODEL = currentPRDLANGMODEL.Replace("{{modelPRDLANG.txtmodelname}}", modelRef);
                         currentPRDLANGMODEL = currentPRDLANGMODEL.Replace("{{modelPRDLANG.txtextra}}", description);
-                        //SOSTITUISCO IL MODELLO
+                        //replace inside the model tag , before the </models>
                         currentPRDLANG = currentPRDLANG.Replace(@"</models>", currentPRDLANGMODEL + @"</models>");
                     }
+
 
                     // if next row different ref is a new article, so I write
                     if ((articleref != nextarticleref)) finalXML += currentPRDLANG;
 
                 }//languagelist
-                /////////////////// FINE PRDLANG ////////////////////////////////
-                /////////////////// FINE PRDLANG ////////////////////////////////
-                
+                 /////////////////// END PRDLANG ////////////////////////////////
+                 /////////////////// END PRDLANG ////////////////////////////////
+
             }// foreach (DataRow row in tbl.Rows)
 
 
